@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/result"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="textEnd"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons_layout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="textEnd"
+        android:textSize="64dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/buttons_layout"
+        android:background="@color/app_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_main"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/ac"
+                android:id="@+id/Ac"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_main"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/c"
+                android:id="@+id/C"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+<!--            <ImageButton-->
+<!--                android:layout_width="72dp"-->
+<!--                android:layout_height="72dp"-->
+<!--                android:layout_marginStart="21dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:background="@drawable/button_main"-->
+<!--                android:id="@+id/clear"-->
+<!--                android:contentDescription="Clear one number"-->
+<!--                android:src="@drawable/clear"/>-->
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_main"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/per"
+                android:id="@+id/percent"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_math_sym"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/div"
+                android:id="@+id/div"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/num_7"
+                android:id="@+id/seven"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/num_8"
+                android:id="@+id/eight"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/num_9"
+                android:id="@+id/nine"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_math_sym"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="@string/mul"
+                android:id="@+id/mul"
+                android:textColor="@color/text"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_4"
+                android:id="@+id/four"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_5"
+                android:id="@+id/five"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_6"
+                android:id="@+id/six"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_math_sym"
+                android:text="@string/minus"
+                android:id="@+id/minus"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_1"
+                android:id="@+id/one"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_2"
+                android:id="@+id/two"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_3"
+                android:id="@+id/three"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_math_sym"
+                android:text="@string/plus"
+                android:id="@+id/plus"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/num_0"
+                android:id="@+id/zero"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_numbers"
+                android:text="@string/com"
+                android:id="@+id/coma"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_math_sym"
+                android:text="@string/eq"
+                android:id="@+id/equal"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textSize="30sp"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
